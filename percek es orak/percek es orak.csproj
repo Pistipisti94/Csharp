@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5CC5434-4BED-4864-9CC8-58E49C9FC44A}</ProjectGuid>
+    <ProjectGuid>{23E1A619-854E-4EF3-A6F9-99D6B266CE37}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_16</RootNamespace>
-    <AssemblyName>16</AssemblyName>
+    <RootNamespace>percek_es_orak</RootNamespace>
+    <AssemblyName>percek es orak</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
