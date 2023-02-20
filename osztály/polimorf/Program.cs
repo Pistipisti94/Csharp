@@ -87,12 +87,12 @@ namespace polimorf
                 do
                 {
                     otthon.csenget();
-                    tovabb = (Console.ReadLine()== string.Empty)?
+                    tovabb = (Console.ReadLine() == string.Empty) ?
                     false : true;
 
                 }while (tovabb);
                 
-
+                
 
                 Console.ReadKey();
 
