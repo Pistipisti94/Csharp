@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp6", "TestApp6\TestAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negyzet", "negyzet\negyzet.csproj", "{49FEB0DD-A767-47B5-B36E-335C43EB1F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "korosztaly", "korosztaly\korosztaly.csproj", "{398C403E-28DF-4DAF-8A96-336AC8B3938B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{49FEB0DD-A767-47B5-B36E-335C43EB1F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49FEB0DD-A767-47B5-B36E-335C43EB1F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49FEB0DD-A767-47B5-B36E-335C43EB1F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

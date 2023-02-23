@@ -18,6 +18,11 @@ namespace negyszog
             this.a = a;
             this.b = b;
         }         // Metódusok
+        public Negyszog(int a) 
+        { 
+            this.a = a;
+            this.b = a;
+        }
         public void setA(int a)
         {
             if (a > 1000)
@@ -52,19 +57,47 @@ namespace negyszog
     }
     internal class Program
     {
-        enum nyomtat { oldal, kerter }
+        enum nyomtat { oldal, kerter, osszes }
         static void Main(string[] args)
         {
             // Első példa
             Negyszog n1 = new Negyszog();
+
             kiir(n1, nyomtat.oldal);
+
             n1.setA(5);
-            n1.setB(6); kiir(n1, nyomtat.oldal); n1.setTerulet();
-            n1.setKerulet(); kiir(n1, nyomtat.kerter);             //Második példa
+            n1.setB(6);
+            
+            kiir(n1, nyomtat.oldal);
+
+            n1.setTerulet();
+            n1.setKerulet();
+            kiir(n1, nyomtat.kerter); 
+            
+            //Második példa
             Negyszog n2 = new Negyszog(6, 2);
-            kiir(n2, nyomtat.oldal); n2.setTerulet();
-            n2.setKerulet(); kiir(n2, nyomtat.oldal); n2.getTerulet();
-            n2.getKerulet(); kiir(n2, nyomtat.kerter); Console.WriteLine();
+            kiir(n2, nyomtat.oldal);
+            n2.setTerulet();
+            n2.setKerulet();
+            kiir(n2, nyomtat.oldal);
+            
+            n2.getTerulet();
+            n2.getKerulet();
+            kiir(n2, nyomtat.kerter);
+            Console.WriteLine();
+
+            //Harmadik példa
+            Negyszog n3 = new Negyszog(6);
+            kiir(n3, nyomtat.oldal);
+            n3.setTerulet();
+            n3.setKerulet();
+            kiir(n3, nyomtat.oldal);
+            
+            n3.getTerulet();
+            n3.getKerulet();
+            kiir(n3, nyomtat.kerter);
+            Console.WriteLine();
+
             Console.ReadKey();
         }
         // Metódus
@@ -72,10 +105,10 @@ namespace negyszog
         {
             if (v == nyomtat.oldal)
             {
-                Console.WriteLine($"Az n1 négyszög oldalai: a = {obj.getA()}, b = {obj.getB()}");
+                Console.WriteLine($"Az négyszög oldalai: a = {obj.getA()}, b = {obj.getB()}");
             }
             else
-                Console.WriteLine($"Az n1 négyszög területe = {obj.getA()}, kerulete = {obj.getB()}");
+                Console.WriteLine($"Az négyszög területe = {obj.getTerulet()}, kerulete = {obj.getKerulet()}");
         }
     }
 }
