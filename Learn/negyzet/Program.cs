@@ -55,6 +55,40 @@ namespace negyszog
             return this.kerulet;
         }
     }
+    class Hasab : Negyszog
+    {
+        //Osztályváltozók
+        //private int a;
+        //private int b;
+        private int m;
+        private double terfogat;
+        private double felszin;
+
+        public Hasab() : base() { }
+
+        public Hasab(int b, int a) : base(a, b)
+        {
+            this.m = m;
+        }
+        public void setM(int a) { this.m = m; }
+
+        public void setNegyszog()
+        {
+            base.setKerulet();
+            base.setTerulet();
+        }
+        public void setTerfogat()
+        {
+            this.terfogat = base.getTerulet() * this.m;
+        }
+        public void setFelszin
+        {
+            this.felszin = base.getKerulet()* this.m + 2 * base.getTerulet();
+
+        }
+        public double getTerfogat() { return this.terfogat; }
+        public double getFelszin() { return this.felszin; }
+    }
     internal class Program
     {
         enum nyomtat { oldal, kerter, osszes }
