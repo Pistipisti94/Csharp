@@ -11,8 +11,8 @@ namespace korosztaly
         class Kor
         {
             private int r;
-            private int terulet;
-            private int kerulet;
+            private double terulet;
+            private double kerulet;
             
             public Kor( int r) 
             {
@@ -21,33 +21,26 @@ namespace korosztaly
             }
 
 
-            public int setTerulet()
+            public void setTerulet()
             {
-                this.terulet = (r * r * Math.PI);
+                this.terulet = ((r * r) * Math.PI);
             }
-            public int setKerulet()
+            public void setKerulet()
             {
                 this.kerulet = (2 * r * Math.PI);
             }
-            
+            public double getTerulet() { return this.terulet; }
+            public double getKerulet() { return this.kerulet; }
+
 
             public Kor() { }
             public void setR(int r) { this.r = r; }
         }
-        class Henger
-        {
-            private int m;
-            private int terfogat;
-            private int felszin;
 
-        }
-        public Henger(int m, int r) : base(r)
-        {
-            this.m = m;
-        }
         class Henger : Kor
-        {
-            private int m;
+        { 
+
+            private double m;
             
             private double terfogat;
             private double felszin;
@@ -68,7 +61,7 @@ namespace korosztaly
             }
             public void setTerfogat()
             {
-                this.terfogat = base.getTerulet() * this.m;
+                this.terfogat =  base.getTerulet() * this.m;
             }
             public void setFelszin()
             {
@@ -88,13 +81,16 @@ namespace korosztaly
         {
             Kor kor = new Kor();
             kor.setR(10);
-            kor.setD(10);
-            Console.WriteLine("A kor területe: {0}, kerülete: {1}",kor.terulet(),kor.kerulet());
+            Console.WriteLine("A kor területe: {0}, kerülete: {1}",kor.getTerulet(),kor.getKerulet());
             
-            Henger henger = new Henger(10,2);
+            Henger henger = new Henger(7,9);
             henger.setKor();
             henger.setTerfogat();
             henger.setFelszin();
+            Console.WriteLine("A henger térgogata: {0}, felszíne: {1}", Math.Round(henger.getTerfogat(),2),Math.Round(henger.getFelszin(),2));
+
+            Console.ReadKey();
         }
+        
     }
 }
