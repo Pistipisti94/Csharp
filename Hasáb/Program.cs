@@ -30,7 +30,7 @@ namespace Hasab
                 return (2 * (this.a + this.b));
             }
 
-            public Teglalap() { }
+            public Negyszog() { }
             public void setA(int a) { this.a = a; }
             public void setB(int b) { this.b = b; }
 
@@ -79,7 +79,7 @@ namespace Hasab
     internal class Program
     {
         enum nyomtat { oldal, kerter, osszes}
-        static void Main(string[] args)
+        static void Main(strin  g[] args)
         {
         Negyszog n1= new Negyszog();
         }
