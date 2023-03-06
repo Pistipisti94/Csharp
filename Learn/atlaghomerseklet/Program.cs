@@ -11,8 +11,12 @@ namespace atlaghomerseklet
         static void Main(string[] args)
         {
             #region 1. példa
-            atlaghomerseklet egy = new atlaghomerseklet();
-           
+            
+            List<Honap> ev = new List<Honap>();
+            for (int i = 0;i < 12; i++)
+            {
+                ev.Add(new Honap());
+            }
 
             #endregion
 

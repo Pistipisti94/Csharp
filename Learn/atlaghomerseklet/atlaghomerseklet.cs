@@ -10,7 +10,7 @@ namespace atlaghomerseklet
 {
     internal class atlaghomerseklet
     {
-        List<Honap> ev = new List<Honap>();
+        
 
     }
     class Honap
