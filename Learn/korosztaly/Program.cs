@@ -83,7 +83,7 @@ namespace korosztaly
             kor.setR(10);
             Console.WriteLine("A kor területe: {0}, kerülete: {1}",kor.getTerulet(),kor.getKerulet());
             
-            Henger henger = new Henger(7,9);
+            Henger henger = new Henger(10,2);
             henger.setKor();
             henger.setTerfogat();
             henger.setFelszin();
