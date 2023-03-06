@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negyzet", "negyzet\negyzet.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "korosztaly", "korosztaly\korosztaly.csproj", "{398C403E-28DF-4DAF-8A96-336AC8B3938B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hasab", "hasab\hasab.csproj", "{0DF5F1BD-74F5-4A4C-893F-299527A037B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{398C403E-28DF-4DAF-8A96-336AC8B3938B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF5F1BD-74F5-4A4C-893F-299527A037B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF5F1BD-74F5-4A4C-893F-299527A037B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF5F1BD-74F5-4A4C-893F-299527A037B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF5F1BD-74F5-4A4C-893F-299527A037B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

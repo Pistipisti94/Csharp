@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49FEB0DD-A767-47B5-B36E-335C43EB1F3F}</ProjectGuid>
+    <ProjectGuid>{0DF5F1BD-74F5-4A4C-893F-299527A037B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>negyzet</RootNamespace>
-    <AssemblyName>negyzet</AssemblyName>
+    <RootNamespace>hasab</RootNamespace>
+    <AssemblyName>hasab</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="negyzet.cs" />
+    <Compile Include="hasab.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
