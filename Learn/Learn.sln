@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szigetek", "szigetek\sziget
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atlaghomerseklet", "atlaghomerseklet\atlaghomerseklet.csproj", "{C9454855-0156-480B-A776-B0893FD5F8DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HofokOOP", "HofokOOP\HofokOOP.csproj", "{002BE64B-B410-41D8-B2C9-8ED8BDF2314F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{C9454855-0156-480B-A776-B0893FD5F8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9454855-0156-480B-A776-B0893FD5F8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9454855-0156-480B-A776-B0893FD5F8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{002BE64B-B410-41D8-B2C9-8ED8BDF2314F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002BE64B-B410-41D8-B2C9-8ED8BDF2314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002BE64B-B410-41D8-B2C9-8ED8BDF2314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002BE64B-B410-41D8-B2C9-8ED8BDF2314F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
