@@ -28,7 +28,7 @@ namespace HofokOOP
         private Napiadat[] OtMinusz = new Napiadat[5];//Az öt minuszos nap tömbje 
         static string[] honapok = { "Január", "Február", "Március", "Április", "Május", "Június", "Július", "Agusztus", "Szeptember", "Október", "November", "December" }; //A 12 hónap nevének tömbje
         //Konstruktor
-        Hofokszamitas(int[,] p)
+        public Hofokszamitas(int[,] p)
         { this.adat = p; }
 
         //Eredményeket átadó metódusok
@@ -39,7 +39,7 @@ namespace HofokOOP
         public Napiadat[] getOtMinusz() { return OtMinusz; }
         #region Feladatok
         //Számítások
-        private void szamitas()
+        public void szamitas()
         {
 
             //Legmelegebb & leghidegebb napok kiszámítása
@@ -49,7 +49,7 @@ namespace HofokOOP
             setHaviAtlag();
             setHaviMaxMin();
             //Folyamatos 5 minuszos nap kiszámítása
-            setOtMinusz();
+            //setOtMinusz();
         }
         public void setHaviAtlag()
         {
