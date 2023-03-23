@@ -17,25 +17,25 @@ namespace CimletezesOOP
         {
             this.a = a;
         }
+
+        public int getA() { return this.a; }
+   
         public void setA(int a)
         {
+            int mar = 0;
             this.a = a;
-        }
-        public int GetA() { return this.a; }
-        public void szamitasok(int a, int[] lista) 
-        {
-            int ennyi = 0;
-            int maradek;
-            for (int i = 0; i < lista.Length; i++)
+            for (int i = lista.Length -1; i>=0; i--)
             {
-                if (a % lista[i] == 0)
+                while (a >= lista[i])
                 {
-                    a= a / lista[i];
-                    ennyi++;
-                    maradek = a % lista[11]; 
+                    a -= lista[i];
+                    mar++;
+
                 }
             }
+            Console.WriteLine(mar);
         }
+       
 
     }
 }

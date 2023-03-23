@@ -10,9 +10,10 @@ namespace CimletezesOOP
     {
         static void Main(string[] args)
         {
+            CimletezOOP szamol= new CimletezOOP();
+
             Console.WriteLine("Pénz: ");
             int penzek = Convert.ToInt32(Console.ReadLine());
-            CimletezOOP szamol= new CimletezOOP();
             szamol.setA(penzek);
 
 
