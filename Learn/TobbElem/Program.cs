@@ -34,7 +34,7 @@ namespace TobbElem
                             paratlan++; 
                         }
                         u = u+u; 
-                        if (u >= 101) { s = true; }
+                        if (u >= 100) { s = true; }
 
                     }
                 }
