@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPCukor", "OOPCukor\OOPCuk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobbElem", "TobbElem\TobbElem.csproj", "{BD841A8B-2405-4540-BE9D-BAA6FF50771D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{F3EC98FA-FC69-42D6-9236-27A127F95E99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{BD841A8B-2405-4540-BE9D-BAA6FF50771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD841A8B-2405-4540-BE9D-BAA6FF50771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD841A8B-2405-4540-BE9D-BAA6FF50771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EC98FA-FC69-42D6-9236-27A127F95E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EC98FA-FC69-42D6-9236-27A127F95E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EC98FA-FC69-42D6-9236-27A127F95E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC98FA-FC69-42D6-9236-27A127F95E99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
