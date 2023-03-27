@@ -25,17 +25,21 @@ namespace TobbElem
                     for (int j = 0; s == false; j++)
                     {
                         int u = Convert.ToInt32(Console.ReadLine());
-                        u = u+u; 
-                        if (u >= 101) { s = true; }
                         if (u % 2 == 0)
                         {
                             paros++;
                         }
-                        else { paratlan++; }
+                        else if (u% 2 ==1) 
+                        {
+                            paratlan++; 
+                        }
+                        u = u+u; 
+                        if (u >= 101) { s = true; }
+
                     }
                 }
             
-            Console.WriteLine("{0}páros és {1} páratlan volt beírva",paros,paratlan);
+            Console.WriteLine("{0} páros és {1} páratlan volt beírva",paros,paratlan);
             Console.ReadKey();
         }
     }
