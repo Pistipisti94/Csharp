@@ -4,26 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csomagoloOOP
+namespace DinnyeOOP
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            CsomagolasOOP szamol = new CsomagolasOOP();
-
-            Console.WriteLine("Mennyiség: ");
-            int mennyi = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Átmérő: ");
-            int mero = Convert.ToInt32(Console.ReadLine());
-            szamol.setSzalag(mero, mennyi);
-           
-
-
-
-
-
-
+            Console.WriteLine("***Dinnye átmérő számítás***");
+            CsomagolasOOP h1 = new CsomagolasOOP();
+            Console.WriteLine("Add meg az átmérőt (CM) :");
+            h1.setD(int.Parse(Console.ReadLine()));
+            Console.WriteLine("Add meg a darabszámot:");
+            h1.setDB(int.Parse(Console.ReadLine()));
+            h1.setOsszeg();
+            Console.WriteLine("A Dinnyékhez ennyi {0} méter szalagra lesz szükséged", h1.getOsszeg());
             Console.ReadKey();
         }
     }
