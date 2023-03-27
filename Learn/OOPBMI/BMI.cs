@@ -8,26 +8,27 @@ namespace OOPBMI
 {
     internal class BMI
     {
-        private double TT;
-        private double TM;
-        private double Index;
+        //Változók
+        private double TT;//Tömeg
+        private double TM;//Magasság
+        private double Index;//végső adat
 
-        public BMI() { }
-        public BMI(double TT, double TM, double Index)
+        public BMI() { } //Konstruktor
+        public BMI(double TT, double TM, double Index) 
         {
             this.TT = TT;
             this.TM = TM;
             this.Index = Index;
         }
-        public void setTT(double TT)
+        public void setTT(double TT) //Eredményeket visszadó metódus
         {
             this.TT = TT;
         }
-        public void setTM(double TM)
+        public void setTM(double TM)//Eredményeket visszadó metódus
         {
             this.TM = TM;
         }
-        public void setIndex()
+        public void setIndex()//Eredményt kiszámító metódus
         {
             this.Index = this.TT / Math.Pow(this.TM, 2);
             if (this.Index < 18)
