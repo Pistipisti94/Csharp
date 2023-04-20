@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileInpOut.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="FilesInOut.cs" />
+    <Compile Include="Program .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

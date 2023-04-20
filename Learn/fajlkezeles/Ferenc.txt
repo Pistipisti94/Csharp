@@ -1,0 +1,19 @@
+C# Label Control
+C# Button Control
+C# TextBox Control
+C# ComboBox
+C# ListBox Control
+C# Checked ListBox Control
+C# CheckBox Control
+C# PictureBox Control
+C# ProgressBar Control
+C# ScrollBars Control
+C# DateTimePicker Control
+C# Treeview Control
+C# ListView Control
+C# Menu Control
+C# MDI Form
+C# Color Dialog Box
+C# Font Dialog Box
+C# OpenFile Dialog Box
+C# Print Dialog Box
