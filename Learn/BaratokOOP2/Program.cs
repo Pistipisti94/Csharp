@@ -9,6 +9,8 @@ namespace BaratokOOP2
     internal class Program
     {
         private static Baratok baratok;
+        private static BaratokScreen baratok1;
+        
 
         static void Main(string[] args)
         {
@@ -24,8 +26,11 @@ namespace BaratokOOP2
             baratok.delete(t[0]);
             vizsga(t[0]);
 
+            baratok1 = new BaratokScreen();
+            baratok1.beolvas();
+            Console.WriteLine();
+            baratok1.listazas();
             
-
             Console.ReadKey();
         }
         private static void vizsga(string t)
