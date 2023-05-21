@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using static System.Net.Mime.MediaTypeNames;
 using System.Security.Cryptography.X509Certificates;
+using System.ComponentModel;
+using System.Runtime.Remoting.Messaging;
 
 namespace BaratokOOP2
 {
@@ -18,10 +20,11 @@ namespace BaratokOOP2
     }
     internal class Baratok
     {
-        private static string path = "..\\..\\";
-        private static string inpfile = "lista.csv";
+        protected static string path = "..\\..\\";
+        protected static string inpfile = "lista.csv";
         private static string outfile = "barat.csv";
         protected List<Szemely> list = new List<Szemely>();
+        protected List<Szemely> recordData = new List<Szemely>();
         #region Konstruktor
         public Baratok() { }
         #endregion Konstruktor
@@ -105,9 +108,9 @@ namespace BaratokOOP2
         #endregion Metódusok
 
 
-        
+
     }
-    internal class BaratokScreen : Baratok 
+    internal class BaratokScreen : Baratok
     {
         public BaratokScreen() { }
         #region listazas
@@ -120,83 +123,121 @@ namespace BaratokOOP2
             }
         }
         #endregion listazas
-        #region lapoz
-        internal class BaratokPage : Baratok
+       
+        }
+    #region lapoz
+    internal class BaratokPage : Baratok
+    {
+        public BaratokPage() { }
+        
+        public void lapoz()
         {
-            public BaratokPage() { }
+            beolvas();
+            
+            int currentPage = 1; // Jelenlegi lap száma
+            int totalRecords = list.Count; // Összes rekord száma
+            int recordsPerPage = 1; // Rekordok száma oldalanként
+            int totalPages = totalRecords/recordsPerPage; // Összes lap száma
 
-            public void lapoz()
+            Console.WriteLine("Jelenlegi lap: " + currentPage);
+            Console.WriteLine("Összes lap: " + totalPages);
+            Console.WriteLine();
+
+            while (true)
             {
-                
-                int lapmeret = 15;
-                //int PageUp = 33;
-                //int PageDown = 34;
-                //int Home =36;
-                //int End =35;
-                //int Esc =27;
-                int p;
-                int i;
-                
-                do
-                {
+                ConsoleKeyInfo key = Console.ReadKey();
 
-                
-                for (i = 0; i < lapmeret; i++)
-                {
-                    Console.WriteLine($"{this.list[i].nev,-20};  {this.list[i].szido.ToShortDateString(),10}; {this.list[i].nem,1}; {this.list[i].hajlam,1}");
-                    Console.WriteLine();
-
-                }
-                p = Convert.ToInt32(Console.ReadKey());
-                    bool b = false;
-                    switch (p)
+                switch (key.Key)
                 {
                     case ConsoleKey.PageUp:
-                       i = (i >= lapmeret) ?  i - lapmeret : 0;
-                        break;//PageUP
-
-                    case ConsoleKey.PageDown: i+=lapmeret;
-                        i = (i <= lapmeret) ? i + lapmeret : 20;
-                        break;//PageDown
-
-                    case ConsoleKey.Home: i = 0;
-                        break;//Home
-
-                    case ConsoleKey.End: i = this.list.Count-lapmeret;
-                        break;//End
-
-                    case ConsoleKey.Escape:
-
-                        b = true;
-                        break;//Esc
-
-                    default:
-                            Console.WriteLine("Csak a következő billentyűket használhatod:\\n PageUp\\n PageDown\\n Home\\n End\\n Esc");
+                        currentPage--;
+                        if (currentPage < 1)
+                            currentPage = 1;
+                        break;
+                    case ConsoleKey.PageDown:
+                        currentPage++;
+                        if (currentPage > totalPages)
+                            currentPage = totalPages;
+                        break;
+                    case ConsoleKey.Home:
+                        currentPage = 1;
+                        break;
+                    case ConsoleKey.End:
+                        currentPage = totalPages;
                         break;
                 }
-                } while (true);
+
+                // Kiírás a jelenlegi oldal tartalmával
+
+                int startIndex = (currentPage - 1) * recordsPerPage;
+                int endIndex = Math.Min(startIndex + recordsPerPage, totalRecords);
+
+                int count = 0; // Változó a kinyomtatott sorok számának nyomon követésére
+                
+                foreach (var item in this.list)
+                {
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        if (startIndex <= i && i < endIndex )
+                    {
+
+
+                            
+
+                            
+                            string name = item.nev;
+                            DateTime birthDate = item.szido;
+                            char gender = item.nem;
+                            int partyHabits = item.hajlam;
+
+                        
+                            Console.Write($"Név: {name},  ");
+                            Console.Write($"Születési idő: {birthDate},  ");
+                            Console.Write($"Nem: {gender},  ");
+                            Console.WriteLine($"Bulizási hajlam: {partyHabits}");
+                            Console.WriteLine();
+                        
+                        }
+
+                    }
+
+                    count++; // Növeli a kinyomtatott sorok számát
+
+                    if (count >= endIndex)
+                    {
+                        break; // Kilép a ciklusból, ha elértük a lap végét
+                    }
+                }
+
+                Console.WriteLine();
+
+                
+
+                Console.WriteLine();
+                Console.WriteLine("Jelenlegi lap: " + currentPage);
+                Console.WriteLine("Összes lap: " + totalPages);
+                Console.WriteLine();
             }
+            
+            
         }
         #endregion lapoz
-    }
-    internal class BaratBuli : Baratok
-    {
-        public BaratBuli() { }
-
-        public void bulizas()
+        internal class BaratBuli : Baratok
         {
-            Console.WriteLine("Kérem adja meg az életkorát:");
-            int E = Convert.ToInt32(Console.ReadLine());
-            int a = 0;
-            
-            foreach (var i in this.list)
-            {
-                if(i.hajlam >= 5 &&  i.szido)
-                {
+            public BaratBuli() { }
 
+            public void bulizas()
+            {
+                Console.WriteLine("Kérem adja meg az életkorát:");
+                int E = Convert.ToInt32(Console.ReadLine());
+                
+
+                foreach (var i in this.list)
+                {
+                   
                 }
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
     }
 }

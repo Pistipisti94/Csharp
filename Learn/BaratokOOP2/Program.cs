@@ -10,6 +10,7 @@ namespace BaratokOOP2
     {
         private static Baratok baratok;
         private static BaratokScreen baratok1;
+        private static BaratokPage baratok2;
         
 
         static void Main(string[] args)
@@ -29,7 +30,11 @@ namespace BaratokOOP2
             baratok1 = new BaratokScreen();
             baratok1.beolvas();
             Console.WriteLine();
-            baratok1.listazas();
+            //baratok1.listazas();
+            baratok2 = new BaratokPage();
+            Console.WriteLine();
+            baratok2.lapoz();
+            
             
             Console.ReadKey();
         }
