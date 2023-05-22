@@ -26,7 +26,7 @@ namespace BaratokOOP2
 
             baratok.delete(t[0]);
             vizsga(t[0]);
-
+            baratok.kiir();
             baratok1 = new BaratokScreen();
             baratok1.beolvas();
             Console.WriteLine();
