@@ -13,7 +13,7 @@ namespace Sajatdogaize
         static int player = 0;
         static int gepp = 0;
 
-        static void valasztas()
+        static void valasztas()//Főmenü metódus
         {
             string input = "";
             while (input != "1" && input != "2" && input != "3" && input != "4")
@@ -26,7 +26,7 @@ namespace Sajatdogaize
                 //Console.WriteLine("3 ");
                 Console.WriteLine("4 Kilépés");
                 Console.WriteLine();
-                
+
 
                 input = Console.ReadLine();
                 switch (input)
@@ -35,13 +35,13 @@ namespace Sajatdogaize
                         Console.Clear();
                         start();
                         break;
-                    case "2":
-                        break;
-                    case "3":
-                        Console.WriteLine();
-                        Console.WriteLine("HÁR");
-                        Console.WriteLine();
-                        break;
+                    //   case "2":
+                    //       break;
+                    // case "3":
+                    //     Console.WriteLine();
+                    //     Console.WriteLine("HÁR");
+                    //     Console.WriteLine();
+                    //     break;
                     case "4":
                         Console.WriteLine();
                         Console.WriteLine("Szia Lajos.");
@@ -54,14 +54,14 @@ namespace Sajatdogaize
                 }
             }
         }
-        static void start()
+        static void start() //A játék kezdete metódus
         {
 
             string input = "";
             while (input != "1" && input != "2" && input != "3" && input != "4")
             {
 
-                
+
                 Console.WriteLine("Válassz: ");
                 Console.WriteLine("1 Kő");
                 Console.WriteLine("2 Papír");
@@ -71,7 +71,7 @@ namespace Sajatdogaize
                 input = Console.ReadLine();
                 switch (input)
                 {
-                    
+
                     case "1":
                         player = 1;
                         Console.Clear();
@@ -95,11 +95,11 @@ namespace Sajatdogaize
             }
             gep();
         }
-        static void gep()
+        static void gep() // A számítógép választásának metódusa
         {
             string gv = "";
             Random random = new Random();
-            gepp = random.Next(1,3);
+            gepp = random.Next(1, 3);
             if (gepp == 1)
             {
                 gv = "Kő";
@@ -115,7 +115,7 @@ namespace Sajatdogaize
             Console.WriteLine($"A gép választása {gv}");
         }
 
-        static void vegkimenet()
+        static void vegkimenet() //A két választás utáni végkimenetel metódusa
         {
             if (player == gepp)
             {
@@ -130,16 +130,11 @@ namespace Sajatdogaize
                 Console.WriteLine("Nyertél!");
             }
         }
-        static void fodolog()
+        static void Main(string[] args)
         {
             valasztas();
             vegkimenet();
             Console.ReadKey();
-        }
-        static void Main(string[] args)
-        {
-            fodolog();
-            Console.WriteLine();
         }
     }
 }
