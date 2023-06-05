@@ -109,6 +109,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.5_Scroll", "15.5_Scroll\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.6_kepek", "18.6_kepek\18.6_kepek.csproj", "{2A7AE11E-85D3-4DDE-A74C-90CF7F2C2D01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.7_komponensek", "18.7_komponensek\18.7_komponensek.csproj", "{77B3719B-FA2E-4744-BA9A-C814F13B7A5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -299,6 +301,10 @@ Global
 		{2A7AE11E-85D3-4DDE-A74C-90CF7F2C2D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A7AE11E-85D3-4DDE-A74C-90CF7F2C2D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A7AE11E-85D3-4DDE-A74C-90CF7F2C2D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B3719B-FA2E-4744-BA9A-C814F13B7A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B3719B-FA2E-4744-BA9A-C814F13B7A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B3719B-FA2E-4744-BA9A-C814F13B7A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B3719B-FA2E-4744-BA9A-C814F13B7A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -321,6 +327,7 @@ Global
 		{971609DE-4AF8-446E-8118-0143EED80B15} = {D6566D09-08C2-44D3-8DF7-E9752465A14C}
 		{C39527AC-D9A5-4132-9C03-A0AA85413B33} = {D6566D09-08C2-44D3-8DF7-E9752465A14C}
 		{2A7AE11E-85D3-4DDE-A74C-90CF7F2C2D01} = {D6566D09-08C2-44D3-8DF7-E9752465A14C}
+		{77B3719B-FA2E-4744-BA9A-C814F13B7A5B} = {D6566D09-08C2-44D3-8DF7-E9752465A14C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F4D21FB-C389-4C49-809A-82365218D414}
